@@ -235,7 +235,7 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
 .hero-tags .sep{color:var(--accent);margin:0 9px;font-weight:600;}
 .project-video{margin:2px 0 22px;max-width:720px;}
 .project-video .pv-label{display:block;font-size:0.76rem;text-transform:uppercase;letter-spacing:1.5px;color:var(--faint);margin-bottom:10px;font-weight:600;font-family:'Inter';}
-.project-video video{width:100%;aspect-ratio:16/9;border-radius:12px;border:1px solid var(--border);display:block;background:#000;box-shadow:var(--shadow);}
+.project-video video{width:100%;height:auto;border-radius:12px;border:1px solid var(--border);display:block;background:#000;box-shadow:var(--shadow);}
 </style>
 </head>
 <body>
@@ -345,6 +345,13 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
           <div class="project-body-inner">
             <!-- EDIT: replace this with a couple of real sentences about how Sportfolio works -->
             <p>A sign-in-gated platform for trading sports — build and manage a portfolio and trade as the action unfolds. <em>(Add a short description of how it works here.)</em></p>
+            <div class="project-video">
+              <span class="pv-label">Demo</span>
+              <video controls preload="metadata" playsinline width="2880" height="1494" poster="Video%20Demos/sportfolio-demo-poster.jpg">
+                <source src="Video%20Demos/Sportfolio%20Demo.mp4" type="video/mp4">
+                Your browser doesn&rsquo;t support embedded video. <a href="Video%20Demos/Sportfolio%20Demo.mp4">Download the demo</a>.
+              </video>
+            </div>
             <div class="detail-grid">
               <div class="detail-col">
                 <h4>Highlights</h4>
@@ -442,7 +449,7 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
             <p>Drop in any YouTube URL and get a clean summary written for the depth you choose — Beginner, Intermediate, or Expert. Built around Claude for the summarization and a transcript service for the source text, with browser-native text-to-speech so you can listen instead of read.</p>
             <div class="project-video">
               <span class="pv-label">Demo</span>
-              <video controls preload="metadata" playsinline poster="Video%20Demos/video-summarizer-demo-poster.jpg">
+              <video controls preload="metadata" playsinline width="1920" height="1080" poster="Video%20Demos/video-summarizer-demo-poster.jpg">
                 <source src="Video%20Demos/Video%20Summarizer%20Demo.mp4" type="video/mp4">
                 Your browser doesn&rsquo;t support embedded video. <a href="Video%20Demos/Video%20Summarizer%20Demo.mp4">Download the demo</a>.
               </video>
