@@ -426,10 +426,10 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
               <div class="detail-col">
                 <h4>Highlights</h4>
                 <ul>
+                  <li>Real Google OAuth authentication, verified securely on the backend rather than just trusted from the browser, so every alert is locked to its owner and can&rsquo;t be viewed/deleted by anyone else.</li>
                   <li>Background scheduler (APScheduler) polling live odds and stock data, with a Flask in-memory cache to stay under API rate limits.</li>
-                  <li>Multi-user support via email-based filtering — the client stores your email in localStorage and the server filters alerts per user.</li>
-                  <li>Email notifications through Brevo; migrated SQLite → PostgreSQL for persistent storage on Render.</li>
-                  <li>UptimeRobot pings keep the free instance warm so the scheduler never dies on spin-down.</li>
+                  <li>Smart duplicate-game detection that catches games the odds provider accidentally lists twice under different internal IDs, matching them up by team names &amp; game times so you never see the same game twice.</li>
+                  <li>Email notifications through Brevo, with PostgreSQL for persistent storage after migrating off SQLite for reliability on Render.</li>
                 </ul>
               </div>
               <div class="detail-col">
