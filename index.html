@@ -254,7 +254,7 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
 .subsection:last-child{margin-bottom:0;}
 .subhead{font-family:'Space Grotesk','Inter',sans-serif;font-size:1.1rem;font-weight:600;color:var(--text);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--border);}
 .ios-soon{color:var(--faint);font-size:0.95rem;margin:0;}
-.ios-row{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start;margin-top:32px;}
+.ios-row{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start;margin-top:32px;margin-bottom:34px;}
 .ios-media{margin:0;}
 .ios-video{width:270px;max-width:100%;height:auto;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow);display:block;background:#000;}
 .ios-shot{width:300px;max-width:100%;height:auto;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow);display:block;}
@@ -458,6 +458,22 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
                   <span class="pv-label">Email alert</span>
                   <img class="ios-shot" src="Video%20Demos/Email%20Alert.jpeg" width="1241" height="1828" loading="lazy" alt="Example LineTracker email alert for a bet hitting its target">
                 </figure>
+              </div>
+              <div class="detail-grid">
+                <div class="detail-col">
+                  <h4>Highlights</h4>
+                  <ul>
+                    <li>A fully native SwiftUI app (not a browser wrapped in a shell) sharing the same Flask/PostgreSQL backend as the web version, so alerts stay in sync across both automatically.</li>
+                    <li>A custom multi-step picker (sport → game → outcome → target odds, with a hand-built slider) rebuilt natively to match the web app&rsquo;s flow, instead of embedding a browser.</li>
+                    <li>An in-app alert feed with an unread badge that mimics real push notifications.</li>
+                  </ul>
+                </div>
+                <div class="detail-col">
+                  <h4>Stack</h4>
+                  <div class="chips">
+                    <span class="chip">SwiftUI</span><span class="chip">Swift Concurrency</span><span class="chip">URLSession</span><span class="chip">Keychain</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
