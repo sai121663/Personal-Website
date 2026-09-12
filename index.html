@@ -254,6 +254,11 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
 .subsection:last-child{margin-bottom:0;}
 .subhead{font-family:'Space Grotesk','Inter',sans-serif;font-size:1.1rem;font-weight:600;color:var(--text);margin:0 0 20px;padding-bottom:10px;border-bottom:1px solid var(--border);}
 .ios-soon{color:var(--faint);font-size:0.95rem;margin:0;}
+.ios-row{display:flex;flex-wrap:wrap;gap:34px;align-items:flex-start;margin-top:8px;}
+.ios-media{margin:0;}
+.ios-video{width:270px;max-width:100%;height:auto;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow);display:block;background:#000;}
+.ios-shot{width:300px;max-width:100%;height:auto;border-radius:20px;border:1px solid var(--border);box-shadow:var(--shadow);display:block;}
+.shot-caption{margin-top:12px;color:var(--faint);font-size:0.9rem;max-width:300px;line-height:1.5;}
 </style>
 </head>
 <body>
@@ -440,8 +445,21 @@ footer{border-top:1px solid var(--border-soft);padding:30px 0;}
             </div>
             <div class="subsection">
               <div class="subhead">iOS App</div>
-              <p class="ios-soon">Coming soon.</p>
-              <!-- EDIT: iOS App content goes here -->
+              <p>The native iOS version of LineTracker — set and track your bet and stock alerts right from your phone.</p>
+              <div class="ios-row">
+                <figure class="ios-media">
+                  <span class="pv-label">App demo</span>
+                  <video class="ios-video" controls preload="metadata" playsinline width="1260" height="2736" poster="Video%20Demos/ios-app-demo-poster.jpg">
+                    <source src="Video%20Demos/iOS%20App%20Recording.mp4" type="video/mp4">
+                    Your browser doesn&rsquo;t support embedded video. <a href="Video%20Demos/iOS%20App%20Recording.mp4">Download the demo</a>.
+                  </video>
+                </figure>
+                <figure class="ios-media">
+                  <span class="pv-label">Email alert</span>
+                  <img class="ios-shot" src="Video%20Demos/Email%20Alert.jpeg" width="1241" height="1828" loading="lazy" alt="Example LineTracker email alert for a bet hitting its target">
+                  <figcaption class="shot-caption">When a target is hit, LineTracker emails you an alert like this — the matchup, how the odds moved against your target, the sportsbook, and when it triggered.</figcaption>
+                </figure>
+              </div>
             </div>
           </div>
         </div>
